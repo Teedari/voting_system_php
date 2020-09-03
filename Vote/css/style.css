@@ -1,0 +1,91 @@
+/*
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*/
+
+/*
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #100f17;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  font-family: Tahoma;
+  
+}
+*/
+
+.circle {
+  background-color: rgb(14, 204, 204);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.circle::before {
+  position: absolute;
+  content: '';
+  /* background-color: #e74b2b; */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid;
+  border-right-color: #100f17;
+  border-top-color: #100f17;
+  color: #100f17;
+  top: 0;
+  left: 6px;
+  transform: rotate(45deg);
+  animation: rot 1s infinite;
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(360deg);
+    color: tomato;
+  }
+}
+
+
+.nav-item a{
+  color: #353535;
+}
+
+.c_container{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ word-spacing: 1rem;
+}
+.carousel-item{
+    height: 40rem;
+    background: #000;
+    color: #fff;
+    position: relative;
+  }
+.overlay-image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.contact ul{
+  padding: 0;
+  margin: 0;
+}
+
+.contact li{
+  list-style: none;
+}

@@ -1,0 +1,24 @@
+.btn-c-dark{
+    background: #707070 !important;
+    color: #fff !important;
+}
+.btn-c-dark:hover{
+    background: #383838 !important;
+}
+
+.panel-login{
+  position: relative !important;
+  border-radius: 20px;
+}
+
+
+.panel-login::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 13px;
+  background: #00BF66;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+}
